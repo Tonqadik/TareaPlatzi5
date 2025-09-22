@@ -3,6 +3,7 @@
     // Atributos
     public string nombre { set; get; }
     public string desc { set; get; }
+    public Tipo_trabajo Trabajo { set; get; } = Tipo_trabajo.DESEMPLEADO;
     private string[] afficiones { set; get; } = [];
 
 
@@ -49,7 +50,7 @@ public class Log {
 
     public void addLinea(string linea)
     {
-        logStr += $"[{DateTime.Now.ToString()}]{linea}\n";
+        logStr += $"[{DateTime.Now.ToString()}] {linea}\n";
     }
 
     public void crearLog()
@@ -80,8 +81,9 @@ class Programa
     }
 }
 
-enum Tipo_trabajo
+public enum Tipo_trabajo
 {
+    DESEMPLEADO,
     COMERCIO,
     SALUD,
     HUMANIDADES,
