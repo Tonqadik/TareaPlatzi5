@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5.csproj": {}
+    "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5_\\TareaPlatzi5.csproj": {}
   },
   "projects": {
-    "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5.csproj": {
+    "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5_\\TareaPlatzi5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5.csproj",
+        "projectUniqueName": "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5_\\TareaPlatzi5.csproj",
         "projectName": "TareaPlatzi5",
-        "projectPath": "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5.csproj",
+        "projectPath": "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5_\\TareaPlatzi5.csproj",
         "packagesPath": "C:\\Users\\juan\\.nuget\\packages\\",
-        "outputPath": "C:\\c#proyectos\\TareaPlatzi5\\obj\\",
+        "outputPath": "C:\\c#proyectos\\TareaPlatzi5\\TareaPlatzi5_\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

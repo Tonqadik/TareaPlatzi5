@@ -1,10 +1,4 @@
-﻿enum Tipo_trabajo { 
-    COMERCIO,
-    SALUD,
-    HUMANIDADES,
-
-}
-public class Tarjeta {
+﻿public class Tarjeta {
 
     // Atributos
     public string nombre { set; get; }
@@ -41,20 +35,55 @@ public class Tarjeta {
     }
 }
 
+public class Log {
+    private string rutaDestino { set; get; }
+    private string logStr      { set; get; } = "";
+
+    public Log()
+    {
+        string directorio = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + "/"; // Directorio del proyecto
+        string pathResultado = directorio + "Log.txt";
+        rutaDestino = pathResultado;
+        addLinea("Programa iniciado");
+    }
+
+    public void addLinea(string linea)
+    {
+        logStr += $"[{DateTime.Now.ToString()}]{linea}\n";
+    }
+
+    public void crearLog()
+    {
+        addLinea("Programa terminado");
+        System.IO.File.WriteAllText(rutaDestino, logStr);
+    }
+
+}
+
 
 
 class Programa
 {
     static void Main(string[] args)
     {
+        Log lg = new Log();
+
+        lg.addLinea("Creacion de clases");
         Tarjeta tj1 = new Tarjeta("Juan garces", "Empleado de una farmaceutica");
         Tarjeta tj2 = new Tarjeta("Tomas Torres", "Empleado de una empresa de electrodómesticos", ["Jugar", "Ver series", "Cocinar"]);
 
+        lg.addLinea("Se imprimen las tarjetas");
         tj1.imprimirDesc();
         tj2.imprimirDesc();
+
+        lg.crearLog();
     }
 }
 
+enum Tipo_trabajo
+{
+    COMERCIO,
+    SALUD,
+    HUMANIDADES,
 
-
-
+}

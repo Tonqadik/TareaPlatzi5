@@ -1,0 +1,4 @@
+[9/22/2025 10:23:50 AM]Programa iniciado
+[9/22/2025 10:23:50 AM]Creacion de clases
+[9/22/2025 10:23:50 AM]Se imprimen las tarjetas
+[9/22/2025 10:23:50 AM]Programa terminado
